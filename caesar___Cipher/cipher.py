@@ -13,13 +13,13 @@ message = input('Введите текст: ')
 step = int(input('Введите шаг:'))
 
 
-def encryption(result=''):
+def encryption(result=''):  # шифровка
     for i in message:
         result += alphabet[(alphabet.index(i) + step) % len(alphabet)]
     return result
 
 
-def decryption(result=''):
+def decryption(result=''):  # расшифровка
     for i in message:
         result += alphabet[(alphabet.index(i) - step) % len(alphabet)]
     return result
