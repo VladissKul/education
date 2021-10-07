@@ -1,0 +1,2 @@
+Неизменяемые: числа(int, float, complex), bool, tuple, str, frozenset
+Изменяемые: list, dict, set
