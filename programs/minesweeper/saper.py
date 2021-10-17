@@ -54,10 +54,10 @@ class MineSweeper:
         cur_btn = event.widget
         if cur_btn['state'] == 'normal':
             cur_btn['state'] = 'disabled'
-            cur_btn['text'] = '🚩'
+            cur_btn['text1'] = '🚩'
             cur_btn['disabledforeground'] = 'red'
-        elif cur_btn['text'] == '🚩':
-            cur_btn['text'] = ''
+        elif cur_btn['text1'] == '🚩':
+            cur_btn['text1'] = ''
             cur_btn['stage'] = 'normal'
 
     def click(self, clicked_button: MyButton):  # аннотация, то есть мы подасказываем, с каким типом объекта будем раб.
@@ -80,7 +80,7 @@ class MineSweeper:
                 for j in range(1, MineSweeper.COLUMNS + 1):
                     btn = self.buttons[i][j]
                     if btn.is_mine:
-                        btn['text'] = '*'
+                        btn['text1'] = '*'
         else:
             color = colors.get(clicked_button.count_bomb, 'black')
             if clicked_button.count_bomb:

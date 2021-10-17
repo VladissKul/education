@@ -8,15 +8,15 @@ window.resizable(True, True)  # возможность изменять разм
 window.minsize(300, 300)  # минимальный возможный размер окна
 window.maxsize(1000, 700)  # максимальный возможный размер окна
 
-# button_1 = tkinter.Button(window, text='hello1')
-# button_2 = tkinter.Button(window, text='hello2')
-# button_3 = tkinter.Button(window, text='hello3')
-# button_4 = tkinter.Button(window, text='hello4')
-# button_5 = tkinter.Button(window, text='hello5')
-# button_6 = tkinter.Button(window, text='hello6')
-# button_7 = tkinter.Button(window, text='hello7')
-# button_8 = tkinter.Button(window, text='hello8')
-# button_9 = tkinter.Button(window, text='hello9')
+# button_1 = tkinter.Button(window, text1='hello1')
+# button_2 = tkinter.Button(window, text1='hello2')
+# button_3 = tkinter.Button(window, text1='hello3')
+# button_4 = tkinter.Button(window, text1='hello4')
+# button_5 = tkinter.Button(window, text1='hello5')
+# button_6 = tkinter.Button(window, text1='hello6')
+# button_7 = tkinter.Button(window, text1='hello7')
+# button_8 = tkinter.Button(window, text1='hello8')
+# button_9 = tkinter.Button(window, text1='hello9')
 #
 # button_1.grid(row=0, column=0)  # номер столбца и строки
 # button_2.grid(row=0, column=1)

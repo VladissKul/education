@@ -43,7 +43,7 @@ count = 0
 def counter():
     global count
     count += 1
-    button_4['text'] = f'Счетчик: {count}'
+    button_4['text1'] = f'Счетчик: {count}'
 
 
 button_1 = tkinter.Button(window, text='Hello',
