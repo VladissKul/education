@@ -1,0 +1,1 @@
+raise TypeError('Пробная ошибка')

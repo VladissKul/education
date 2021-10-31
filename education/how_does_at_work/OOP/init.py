@@ -1,4 +1,4 @@
-class Cat():
+class Cat:
     def __init__(self, name, age, color):  # автоматически выполняется при запуске программы
         self.name = name
         self.age = age
