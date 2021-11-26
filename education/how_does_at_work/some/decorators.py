@@ -3,18 +3,25 @@
 """
 
 
-def decorator(func):
-    def inner(*args, **kwargs):
-        print('start decorator')
-        func(*args, **kwargs)
-        print('finish decorator')
+def benchmark(func):
+    import time
 
-    return inner
+    def wrapper(*args, **kwargs):
+        start = time.time()
+        return_value = func(*args, **kwargs)
+        end = time.time()
+        print('[*] Время выполнения: {} секунд.'.format(end - start))
+        return return_value
+
+    return wrapper
 
 
-@decorator  # то же самое что и say = header(say)
-def say(name, surname, age):
-    print('hello', name, surname, age)
+@benchmark
+def fetch_webpage(url):
+    import requests
+    webpage = requests.get(url)
+    return webpage.text
 
 
-say('Vasya', 'Ivanov', 30)
+webpage = fetch_webpage('https://google.com')
+print(webpage)
